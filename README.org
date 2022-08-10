@@ -1,0 +1,34 @@
+* ob-mixal
+
+Run MIXAL programs using org-mode, org-babel and [[https://github.com/darius/mixal][mixal emulator]].
+
+* setup
+
+1. Install package from  - Melpa?
+2. Compile and install [[https://github.com/darius/mixal][mixal emulator]]
+3. Specify =mixal= executable path:
+  #+begin_src elisp
+  (setq ob-mixal-cli-path "/your/compiled/mixal")
+  #+end_src
+4. add =mermaid= to =org-babel-load-languages=
+  #+begin_src elisp
+    (org-babel-do-load-languages
+        'org-babel-load-languages
+        '((mixal . t)
+          (your-other-langs . t)))
+  #+end_src
+
+5. Open =org-mode= buffer and create an =org-babel= source block:
+   #+begin_src org
+     ,#+begin_src mixal
+        START      OUT  HELLO(18)
+        JBUS *(18)
+        HLT
+        HELLO      CON "hello"
+        CON ", wor"
+        CON "ld"
+        END START
+     ,#+end_src
+   #+end_src
+
+6. Exporting the =org-mode= document or invoking the =org-babel-execute-src-block= function to generate diagram.
