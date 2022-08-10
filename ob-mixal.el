@@ -35,7 +35,7 @@
 
 (defvar org-babel-default-header-args:mixal
   '((:results . "value verbatim"))
-  "Default arguments for evaluatiing a mix source block.")
+  "Default arguments for evaluatiing a mixal source block.")
 
 (defcustom ob-mixal-cli-path nil
   "Path to mixal executable."
