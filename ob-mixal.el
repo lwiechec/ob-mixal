@@ -49,7 +49,6 @@
                     (error "`ob-mixal-cli-path' is not set and mixal is not in `exec-path'")))
          (cmd (concat (shell-quote-argument (expand-file-name mixal))
                       " " (org-babel-process-file-name temp-file))))
-
     (unless (file-executable-p mixal)
       (error "Cannot find or execute %s, please check `ob-mixal-cli-path'" mmdc))
     (with-temp-file temp-file (insert body))

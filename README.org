@@ -4,7 +4,7 @@ Run MIXAL programs using org-mode, org-babel and [[https://github.com/darius/mix
 
 * setup
 
-1. Install package from  - Melpa?
+1. Install package from Melpa (TO BE UPDATED) or el-get (TO BE UPDATED)
 2. Compile and install [[https://github.com/darius/mixal][mixal emulator]]
 3. Specify =mixal= executable path:
   #+begin_src elisp
