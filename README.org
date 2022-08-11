@@ -32,3 +32,17 @@ Run MIXAL programs using org-mode, org-babel and [[https://github.com/darius/mix
    #+end_src
 
 6. Exporting the =org-mode= document or invoking the =org-babel-execute-src-block= function to generate diagram.
+
+* el-get recipe
+
+If you are using [[https://github.com/dimitri/el-get][el-get]] for your emacs package management, you can use this recipe:
+
+#+begin_src elisp
+  (:name ob-mixal
+         :type github
+         :pkgname "lwiechec/ob-mixal"
+         :branch "main"
+         :features ob-mixal
+         :depends (org-mode)
+         :description "run MIXAL code from org-babel")
+#+end_src
