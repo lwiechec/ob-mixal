@@ -31,7 +31,7 @@ Run MIXAL programs using org-mode, org-babel and [[https://github.com/darius/mix
      ,#+end_src
    #+end_src
 
-6. Exporting the =org-mode= document or invoking the =org-babel-execute-src-block= function to generate diagram.
+6. Running =org-babel-execute-src-block= function (=C-c C-c=) to the block.
 
 * el-get recipe
 
